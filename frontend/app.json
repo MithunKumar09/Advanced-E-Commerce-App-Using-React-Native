@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "frontend",
+    "slug": "frontend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo2.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo1.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.frontend",
+      "infoPlist": {
+        "UIRequiresFullScreen": true,
+        "UILaunchStoryboardName": "LaunchScreen",
+        "NSLocationWhenInUseUsageDescription": "Your app uses location to provide location-based services."
+      }
+    },
+    "android": {
+      "package": "com.yourname.frontend",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo2.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "themeColor": "#1E40AF",
+      "description": "A responsive app for web, iOS, and Android built using Expo and React Native."
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "responsiveConfig": {
+        "mobileBreakpoint": 768,
+        "tabletBreakpoint": 1024
+      },
+      "eas": {
+        "projectId": "41d7a2ac-a947-4696-b630-99c8d0ef757d"
+      }
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
